@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Prompt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color: #f0ac8c;
+    padding: 12px 40px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+#navbar li{
+    list-style: none;
+}
+#logo{
+    display: flex;
+    align-items: left;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin: 0 14px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 13px 30px;
+    color: black;
+}
+#navbar li a:hover{
+    color: white;
+}
+
+#introSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    justify-content: center;
+    background: center/cover no-repeat url("/static/bg.jpg");
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    height: 430px;
+}
+
+#introSection div.small{
+    font-size: 50px;
+    padding: 15px;
+}
+#styles{
+    height: 430px;
+    background-color: #f0ac8c;
+    margin: auto;
+    width: 100%;
+    display: block;
+}
+
+#styles h2{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+#styles div.card{
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 80%;
+    margin: 23px 100px;
+    height: 300px;
+    display: inline-block;
+}
+#card1{
+    background: center/cover no-repeat url("/static/card1.jpg");
+}
+#card2{
+    background: center/cover no-repeat url("/static/card2.jpg");
+}
+#card3{
+    background: center/cover no-repeat url("/static/card3.jpg");
+}
+#hover-content{
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    padding-top: 70px;
+    font-size: 50px;
+}
+.card:hover #hover-content{
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover{
+    opacity: .8;
+}
+.slideshow{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.card{
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+} 
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#WhyUs{
+    height: 340px;
+    background-color: #f0ac8c;
+}
+#WhyUs h2{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+.cardshow{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 25%;
+    margin-top: 23px;
+    height: 240px;
+    margin-bottom: 40px;
+    margin-left: 75px;
+    margin-right: 44px;
+    display: inline-block;
+}
+.cardshow h3{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    /* margin: 0 12px; */
+    margin: 24px;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content{
+    text-align: center;
+    margin: 10px 70px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.cardshow:hover{
+    height: 230px;
+    width: 26%;
+    background-color:lightpink;
+}
+.cardshow:hover #more{
+    background-color: lightcyan;
+    font-weight: bold;
+}
+#more{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top:10px;
+    padding: 8px 50px;
+    font-weight: bolder;
+    background-color: burlywood;
+    color: black;
+    cursor: pointer;
+}
+#footer{
+    height:40px;
+    background-color: black;
+    color: wheat;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Prompt', sans-serif;
+}
+
+
+@media screen and (min-width:700px) and (max-width:1440px)  {
+    #WhyUs{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .card-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cardshow{
+        width: 50%;
+        height: 25%;
+        margin-bottom: 10px;
+        /* display: inline-block; */
+    }
+    .cardshow h3{
+        margin: 15px;
+    }
+    .card-content{
+        margin: 5px 35px;
+    }
+    #more{
+        margin-top: 18px;
+    }
+    #navbar li a{
+        font-size: 22px;
+        padding-left: 20px;
+    }
+}
+
+ 

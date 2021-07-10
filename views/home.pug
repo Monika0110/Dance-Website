@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts 
+  script(src="/static/script.js")
+
+block style 
+  style 
+    include ../static/style.css
+
+block content 
+    section#introSection
+        div  Welcome to Nritya Vidyalaya
+        div.small Live Love Dance 
+    section#styles 
+        h2 Choose your own style
+        div.slideshow
+          div.card.fade#card1 
+            p#hover-content Ballet 
+          div.card.fade#card2
+            p#hover-content Hip-hop 
+          div.card.fade#card3
+            p#hover-content Classical
+          a.prev(onclick="plusSlide(-1)") &#10094
+          a.next(onclick="plusSlide(1)") &#10095
+    section#WhyUs
+        h2 Why Us ?
+        div.cardshow 
+          h3 Dance as your Career? Why not!
+          div.card-box 
+            div.card-content 
+              p Zenith Dance Academy can be a great medium to express yourself and enjoy your life. But, there is much more to this craft. It can help you fullfil your dreams …
+              button#more More
+        div.cardshow 
+          h3 A career in Dance
+          div.card-box 
+            div.card-content 
+              p Apart from being a fine skill, dancing can be a well-paying career too. It can earn you recognition, fame, and lots of money as well. With our assistance… 
+              button#more More
+        div.cardshow 
+          h3 Challenges 
+          div.card-box 
+            div.card-content 
+              p Apart from being a fine skill, dancing can be a well-paying career too. It can earn you recognition, fame, and lots of money as well. With our assistance…
+              button#more More 

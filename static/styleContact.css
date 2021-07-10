@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #d4cbc6;
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    margin: 20px ;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.myinput{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 8px 25px;
+    margin: 10px;
+    background-color: coral;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+
+}
