@@ -55,6 +55,4 @@ app.post('/contact',(req,res)=>{
 
 
 //START THE SERVER
-app.listen(port,()=>{
-    console.log(`The application is successfully started at port ${port}`);
-})
+app.listen(process.env.PORT || 3000)
