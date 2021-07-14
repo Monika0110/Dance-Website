@@ -5,7 +5,7 @@ const port=4000;
 // const body = require("body-parser");
 //body-parser helps in saving the body after parsing of post request in database
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/ContactDance', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/your-app-name', {useNewUrlParser: true, useUnifiedTopology: true});
 
 //Define mongoose schema
 const contactSchema = new mongoose.Schema({
