@@ -18,7 +18,7 @@ html{
     font-family: 'Prompt', sans-serif;
     font-weight: bold;
     font-size: 30px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     display: flex;
 }
